@@ -56,7 +56,7 @@ if (true) {// получение ID элементы поля игры
 }
 
 let games = [
-  Puzzle
+  Puzzle,Puzzle,Puzzle,Puzzle,Puzzle,Puzzle,Puzzle
 ];
 function sortingDate(old_new, up_down) {
   let sort_date = [];
