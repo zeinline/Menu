@@ -56,24 +56,7 @@ if (true) {// получение ID элементы поля игры
 }
 
 let games = [
-  NoInternet,
-  LikeChest,
-  NewSnake,
-  NinjaRunner,
-  SpongeBobTicTacToe,
-  Victorina,
-    NoInternet,
-    LikeChest,
-    NewSnake,
-    NinjaRunner,
-    SpongeBobTicTacToe,
-    Victorina,
-      NoInternet,
-      LikeChest,
-      NewSnake,
-      NinjaRunner,
-      SpongeBobTicTacToe,
-      Victorina
+  Puzzle
 ];
 function sortingDate(old_new, up_down) {
   let sort_date = [];
