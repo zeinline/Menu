@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang='ru'>
+<head>
+	<meta http-equiv='content-type' content='text/html; charset=UTF-8'>
+	<link rel='stylesheet' href='style.css' type='text/css'>
+	<title>Memu</title>
+</head>
+<body>
+	<div id='header'>
+		<img src='img/header.png'>
+	</div>
+
+	<div id='menu'>
+		<div id='field_search' style='display: none;'>
+			<input id='search' type='text' name='поисковик' value=''>
+			<button id='search_bt_0' style='display: none;' type='button' onclick='searchButton(0)'></button>
+			<button id='search_bt_1' style='display: none;' type='button' onclick='searchButton(1)'></button>
+			<button id='search_bt_2' style='display: none;' type='button' onclick='searchButton(2)'></button>
+		</div>
+
+		<div id='field_tag' style='display: none;'>
+			движек игры
+			<button id='unity' onclick='btTagBuild("unity")'>unity</button>
+			<button id='web' onclick='btTagBuild("web")'>web</button><br>
+			количество игроков
+			<button id='p_1' onclick='btTagPlayer(1)'>1</button>
+			<button id='p_2' onclick='btTagPlayer(2)'>2</button>
+			<button id='p_3' onclick='btTagPlayer(3)'>3</button>
+			<button id='p_4' onclick='btTagPlayer(4)'>4</button>
+			<button id='p_9' onclick='btTagPlayer(9)'>online</button><br>
+			<div style='text-align: center;'>теги</div>
+			<button id='t_0' onclick='btTagOther("arcade",0)'>arcade</button>
+			<button id='t_1' onclick='btTagOther("snake",1)'>snake</button>
+			<button id='t_2' onclick='btTagOther("arcade1",2)'>arcade1</button>
+			<button id='t_3' onclick='btTagOther("snake1",3)'>snake1</button>
+			<button id='t_4' onclick='btTagOther("arcade2",4)'>arcade2</button>
+			<button id='t_5' onclick='btTagOther("snake2",5)'>snake2</button>
+			<button id='t_6' onclick='btTagOther("arcade3",6)'>arcade3</button>
+			<button id='t_7' onclick='btTagOther("snake3",7)'>snake3</button>
+		</div>
+
+		<div id='content' style='display: block;'>
+			<div id='game_icon'></div><hr>
+			<div class='bt_controls'>
+				<button id='bt_search' onclick='btSearch();'>поиск по названию</button>
+				<button id='more_game' onclick='moreGame();'>показать больше игр</button>
+				<button id='bt_tag' onclick='btTag();'>поиск по тегам</button>
+			</div>
+		</div>
+	</div>
+
+	<div id='field_game' style='display: none;'>
+		<button id='close' type='button'
+			onclick='
+				menu.style.display = "block";
+				field_game.style.display = "none";
+			'><h1>x</h1></button>
+
+		<img id='icon' src=''></img>
+		<div id='title'>name</div>
+		<div id='size'>size</div>
+		<div id='date'>date - date</div>
+		<button id='download' type='button' onclick='gameDownload(final_version);'>download</button>
+		<button id='play' type='button' onclick='gamePlay(final_version);'>play</button>
+		<div id='brief'>min ops</div>
+		<div id='field_screenshots'></div>
+		<div id='desc'>max ops</div>
+		<div id='plays_downloads'>
+			<button class='downloads' type='button' onclick='gameDownload(version);'>download 1.0.0</button>
+		</div>
+
+	</div>
+
+	<!--div style='margin-left: 36%; zoom: 200%;'>
+		<button type='button' onclick='lang = 0; console.log(lang)' style='margin: 0; padding: 0;'><img src='img/en.png'></button>
+		<button type='button' onclick='lang = 1; console.log(lang)' style='margin: 0; padding: 0;'><img src='img/ru.png'></button>
+	</div-->
+
+	<div>
+		<script src="F:/OpenServer/domains/zein_line/games/html%20game/Dino%20run/web_data/info.js"></script>
+		<script src="F:/OpenServer/domains/zein_line/games/html%20game/like%20chest/web_data/info.js"></script>
+		<script src="F:/OpenServer/domains/zein_line/games/html%20game/new%20snake/web_data/info.js"></script>
+		<script src="F:/OpenServer/domains/zein_line/games/html%20game/ninja%20runner/web_data/info.js"></script>
+		<script src="F:/OpenServer/domains/zein_line/games/html%20game/sponge%20bob%20tic-tac-toe/web_data/info.js"></script>
+		<script src="F:/OpenServer/domains/zein_line/games/html%20game/victorina/web_data/info.js"></script>
+		<script src="script.js" type="text/javascript"></script>
+	</div>
+</body>
+</html>
